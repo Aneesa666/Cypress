@@ -8,8 +8,8 @@
         "headTest": "npm run test -- --headed",
         "chromeTest": "npm run test -- --browser chrome",
         "recordDashBoardTest": "npm run test -- --record --key fa423514-5a84-42a7-b6a0-b5e7191bba12 --reporter mochawesome",
-        "PractiseTest": "npm run test -- --spec \"cypress/integration/Practise/*\""
-
+        "PractiseTest": "npm run test -- --spec \"cypress/integration/Practise/*\"",
+        "test-jenkins": "npm run test -- --reporter junit --reporter-options \"mochaFile=reports/my-test-output.xml, toConsole = true\""
     },
     "author": "",
     "license": "ISC",
@@ -20,6 +20,7 @@
     "devDependencies": {
         "cypress-iframe": "^1.0.1",
         "mocha": "^8.0.1",
+        "mocha-jenkins-reporter": "^0.4.4",
         "mochawesome": "^6.1.1"
     }
 }
