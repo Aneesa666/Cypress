@@ -57,9 +57,9 @@ pipeline {
                 }
             }
             steps {
-                bat '''npm run %CHOICES% %cypress_key%
-                 npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
-                 npx marge mochawesome.json'''
+                bat '''npm run %CHOICES% %cypress_key%'''
+                bat '''npx mochawesome-merge "cypress/results/*.json" > mochawesome.json'''
+                bat '''npx marge mochawesome.json'''
 
             }   
             post{
