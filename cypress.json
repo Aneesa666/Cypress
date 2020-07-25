@@ -2,6 +2,12 @@
     "defaultCommandTimeout": 10000,
     "pageLoadTimeout": 30000,
     "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
     "env": {
         "url": "https://rahulshettyacademy.com",
         "cypress_record_key": "4fbf99ef-7a80-450d-8f59-faef24886c2c"
