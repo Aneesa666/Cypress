@@ -7,7 +7,7 @@
         "test": "node_modules\\.bin\\cypress run",
         "headTest": "npm run test -- --headed",
         "chromeTest": "npm run test -- --browser chrome",
-        "recordDashBoardTest": "npm run test -- --record --key 4fbf99ef-7a80-450d-8f59-faef24886c2c --reporter mochawesome",
+        "recordDashBoardTest": "npm run test -- --record --key b91bb11c-f580-44d3-8f95-c54aebc8aee8 --reporter mochawesome",
         "PractiseTest": "npm run test -- --spec \"cypress/integration/Practise/*\"",
         "test-jenkins": "npm run test -- --reporter junit --reporter-options \"mochaFile=reports/my-test-output.xml, toConsole = true\""
     },
