@@ -23,7 +23,7 @@ pipeline {
         stage('RunTest') {
             when {  
                 expression { 
-                    params.name == 'test'
+                    params.CHOICES == 'test'
                 }
             }
             steps {
@@ -33,7 +33,7 @@ pipeline {
         stage('RunHeadTest') {
             when {  
                 expression { 
-                    params.name == 'headTest'
+                    params.CHOICES == 'headTest'
                 }
             }
             steps {
@@ -43,7 +43,7 @@ pipeline {
         stage('RunChromeTest') {
             when {  
                 expression { 
-                    params.name == 'chromeTest'
+                    params.CHOICES == 'chromeTest'
                 }
             }
             steps {
@@ -53,7 +53,7 @@ pipeline {
         stage('RunDashboardTest') {
             when {  
                 expression { 
-                    params.name == 'recordDashBoardTest'
+                    params.CHOICES == 'recordDashBoardTest'
                 }
             }
             steps {
@@ -71,7 +71,7 @@ pipeline {
         stage('RunPractiseTest') {
             when {  
                 expression { 
-                    params.name == 'PractiseTest'
+                    params.CHOICES == 'PractiseTest'
                 }
             }
             steps {
@@ -81,7 +81,7 @@ pipeline {
         stage('RunJenkinsTest') {
             when {  
                 expression { 
-                    params.name == 'test-jenkins'
+                    params.CHOICES == 'test-jenkins'
                 }
             }
             steps {
